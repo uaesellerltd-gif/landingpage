@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ecommerce with Ali Moon | Your E-commerce Growth Partner</title>
+<meta name="description" content="Amazon, eBay, Shopify, Etsy and Buzzing services: product hunting, listings, store setup and account management by Ali Raza, Emirates Emporium LTD.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=DM+Sans:wght@400;500;700&display=swap">
+<style>
+body { margin: 0; }
+.nl { color: #CFC8EE; text-decoration: none; font-size: 16px; font-weight: 500; }
+.nl:hover { color: #FFFFFF; }
+.btn1 { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 0 28px; border-radius: 999px; background: #C6F432; color: #14102B; font-weight: 700; font-size: 17px; text-decoration: none; transition: transform .2s ease, box-shadow .2s ease; box-shadow: 0 10px 30px rgba(198, 244, 50, .25); }
+.btn1:hover { transform: translateY(-3px); box-shadow: 0 16px 40px rgba(198, 244, 50, .4); color: #14102B; }
+.btn2 { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 0 28px; border-radius: 999px; background: rgba(255, 255, 255, .06); border: 1px solid rgba(255, 255, 255, .28); color: #FFFFFF; font-weight: 700; font-size: 17px; text-decoration: none; transition: transform .2s ease, background .2s ease; }
+.btn2:hover { transform: translateY(-3px); background: rgba(255, 255, 255, .14); color: #FFFFFF; }
+.card { transition: transform .35s ease, border-color .35s ease, background .35s ease; }
+.card:hover { transform: translateY(-8px); border-color: rgba(168, 146, 255, .7); background: rgba(255, 255, 255, .08); }
+.card .ico { transition: transform .5s ease; }
+.card:hover .ico { transform: rotate(-8deg) scale(1.1) translateY(-4px); }
+.face { position: absolute; top: 0; left: 0; right: 0; bottom: 0; border-radius: 26px; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255, 255, 255, .3); box-shadow: inset 0 0 50px rgba(255, 255, 255, .14); backface-visibility: hidden; }
+.cube { transform-style: preserve-3d; animation: spin 18s linear infinite; }
+.mini { transform-style: preserve-3d; animation: spin 9s linear infinite; }
+.miniface { position: absolute; top: 0; left: 0; right: 0; bottom: 0; border-radius: 14px; border: 1px solid rgba(255, 255, 255, .35); backface-visibility: hidden; }
+.fl1 { animation: floaty 6s ease-in-out infinite; }
+.fl2 { animation: floaty2 7s ease-in-out infinite; }
+.fl3 { animation: floaty 8s ease-in-out infinite; animation-delay: -3s; }
+.fl4 { animation: floaty2 5s ease-in-out infinite; animation-delay: -2s; }
+.pulse { animation: pulse 2s ease-in-out infinite; }
+.rise { animation: rise .9s cubic-bezier(.2, .7, .2, 1) both; }
+.d1 { animation-delay: .1s; } .d2 { animation-delay: .25s; } .d3 { animation-delay: .4s; } .d4 { animation-delay: .55s; }
+.marquee { display: flex; width: max-content; animation: marquee 38s linear infinite; }
+.iso { transform-style: preserve-3d; animation: sway 12s ease-in-out infinite; }
+.layer { position: absolute; top: 0; left: 0; right: 0; bottom: 0; border-radius: 30px; padding: 26px; box-sizing: border-box; border: 1px solid rgba(255, 255, 255, .35); }
+.l1 { background: linear-gradient(145deg, #3A2A9E, #1E1458); animation: lift1 7s ease-in-out infinite; box-shadow: 0 0 80px rgba(124, 92, 255, .5); }
+.l2 { background: linear-gradient(145deg, #FF8E70, #E2552F); animation: lift2 7s ease-in-out infinite; }
+.l3 { background: linear-gradient(145deg, #9B80FF, #6540F0); animation: lift3 7s ease-in-out infinite; }
+@keyframes spin { from { transform: rotateX(-22deg) rotateY(0deg); } to { transform: rotateX(-22deg) rotateY(360deg); } }
+@keyframes floaty { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-18px); } }
+@keyframes floaty2 { 0%, 100% { transform: translateY(0px) rotate(-3deg); } 50% { transform: translateY(16px) rotate(3deg); } }
+@keyframes pulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(198, 244, 50, .6); } 50% { box-shadow: 0 0 0 8px rgba(198, 244, 50, 0); } }
+@keyframes rise { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: translateY(0px); } }
+@keyframes marquee { from { transform: translateX(0%); } to { transform: translateX(-50%); } }
+@keyframes sway { 0%, 100% { transform: rotateX(58deg) rotateZ(-40deg); } 50% { transform: rotateX(58deg) rotateZ(-28deg); } }
+@keyframes lift1 { 0%, 100% { transform: translateZ(-70px); } 50% { transform: translateZ(-110px); } }
+@keyframes lift2 { 0%, 100% { transform: translateZ(0px); } 50% { transform: translateZ(0px); } }
+@keyframes lift3 { 0%, 100% { transform: translateZ(70px); } 50% { transform: translateZ(115px); } }
+@media (max-width: 1000px) { .deco { display: none; } .ctapanel { padding: 56px 24px !important; border-radius: 32px !important; } }
+@media (prefers-reduced-motion: reduce) { .cube, .mini, .fl1, .fl2, .fl3, .fl4, .pulse, .rise, .marquee, .iso, .l1, .l2, .l3 { animation: none; } }
+</style>
+
+</head>
+<body>
+
+
+<div style="width: 100%; min-width: 0; background: #0E0B1F; color: #F4F1FF; font-family: 'DM Sans', system-ui, sans-serif; overflow: hidden;">
+
+<!-- HERO -->
+<section id="top" style="position: relative; background-image: radial-gradient(rgba(255,255,255,.07) 1px, transparent 1px); background-size: 30px 30px; overflow: hidden;">
+<div aria-hidden="true" style="position: absolute; right: -120px; top: 60px; width: 620px; height: 620px; border-radius: 50%; background: radial-gradient(circle, rgba(124,92,255,.5), rgba(124,92,255,0) 65%);"></div>
+<div aria-hidden="true" style="position: absolute; left: -160px; top: 380px; width: 480px; height: 480px; border-radius: 50%; background: radial-gradient(circle, rgba(255,122,89,.28), rgba(255,122,89,0) 65%);"></div>
+<div style="position: relative; max-width: 1200px; margin: 0 auto; padding: 0 24px; box-sizing: border-box;">
+
+<header style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; padding: 28px 0;">
+<a href="#top" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #FFFFFF; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px; letter-spacing: -0.02em;">
+<svg width="34" height="34" viewBox="0 0 80 80" aria-hidden="true"><polygon points="40,6 70,22 40,38 10,22" fill="#CBBBFF"/><polygon points="10,22 40,38 40,72 10,56" fill="#7C5CFF"/><polygon points="70,22 40,38 40,72 70,56" fill="#4C2FD0"/></svg>
+<span>Ecommerce with Ali Moon</span>
+</a>
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 32px;">
+<a class="nl" href="#services">Services</a>
+<a class="nl" href="#stack">Our approach</a>
+<a class="nl" href="#process">Process</a>
+<a class="nl" href="#contact">Contact</a>
+</nav>
+<a class="btn2" href="tel:+923464433243" style="min-height: 46px; padding: 0 22px; font-size: 16px;">Call +92 346 4433243</a>
+</header>
+
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px 56px; padding: 40px 0 110px;">
+
+<div style="flex: 1 1 480px; min-width: 0;">
+<div class="rise" style="display: inline-flex; align-items: center; gap: 10px; padding: 9px 16px; border-radius: 999px; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.16); font-size: 15px; color: #DCD6F7;">
+<span class="pulse" style="width: 9px; height: 9px; border-radius: 50%; background: #C6F432;"></span>
+Emirates Emporium LTD
+</div>
+<h1 class="rise d1" style="margin: 26px 0 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(44px, 6.4vw, 86px); line-height: 1.02; letter-spacing: -0.035em;">Your e-commerce <span style="color: #A892FF;">growth partner.</span></h1>
+<p class="rise d2" style="margin: 26px 0 0; max-width: 560px; font-size: 20px; line-height: 1.6; color: #C9C2EA;">Ecommerce with Ali Moon helps you start and grow on Amazon, eBay, Shopify, Etsy and Buzzing, from product hunting and listings to account and store management.</p>
+<div class="rise d3" style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 38px;">
+<a class="btn1" href="#contact">Start your store
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#14102B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+</a>
+<a class="btn2" href="#services">Explore services</a>
+</div>
+<div class="rise d4" style="display: flex; flex-wrap: wrap; gap: 14px 28px; margin-top: 44px; color: #C9C2EA; font-size: 16px;">
+<span style="display: inline-flex; align-items: center; gap: 8px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C6F432" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Your success, our priority</span>
+<span style="display: inline-flex; align-items: center; gap: 8px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C6F432" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>On-time delivery</span>
+<span style="display: inline-flex; align-items: center; gap: 8px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C6F432" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Reliable support</span>
+<span style="display: inline-flex; align-items: center; gap: 8px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C6F432" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Grow your business</span>
+</div>
+</div>
+
+<!-- 3D HERO SCENE -->
+<div style="flex: 1 1 420px; min-width: 0; display: flex; justify-content: center;">
+<div role="img" aria-label="Illustration of a rotating 3D parcel surrounded by floating order, sales and delivery cards" style="position: relative; width: min(540px, 100%); height: 540px; perspective: 1400px;">
+
+<div aria-hidden="true" style="position: absolute; left: 50%; top: 74%; width: 320px; height: 70px; margin-left: -160px; border-radius: 50%; background: radial-gradient(ellipse, rgba(0,0,0,.65), rgba(0,0,0,0) 70%);"></div>
+<div aria-hidden="true" style="position: absolute; left: 50%; top: 66%; width: 380px; height: 110px; margin-left: -190px; border-radius: 50%; border: 2px solid rgba(168,146,255,.45);"></div>
+<div aria-hidden="true" style="position: absolute; left: 50%; top: 62%; width: 520px; height: 150px; margin-left: -260px; border-radius: 50%; border: 1px dashed rgba(255,255,255,.18);"></div>
+
+<div class="cube" aria-hidden="true" style="position: absolute; left: 50%; top: 50%; width: 200px; height: 200px; margin: -130px 0 0 -100px;">
+<div class="face" style="background: linear-gradient(145deg, #9B80FF, #5233D9); transform: translateZ(100px);">
+<svg width="76" height="76" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.4 11h10.2l2-8H6.2"/><circle cx="9" cy="19.5" r="1.4"/><circle cx="17" cy="19.5" r="1.4"/></svg>
+</div>
+<div class="face" style="background: linear-gradient(145deg, #FF9A7E, #D94E2A); transform: rotateY(180deg) translateZ(100px);">
+<svg width="76" height="76" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12.5V4h8.5L21 13.5 13.5 21z"/><circle cx="7.5" cy="8.5" r="1.3"/></svg>
+</div>
+<div class="face" style="background: linear-gradient(145deg, #6F52F5, #33209C); transform: rotateY(90deg) translateZ(100px);">
+<svg width="76" height="76" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6h11v10H2zM13 9h4.5l3 3.5V16H13z"/><circle cx="6.5" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg>
+</div>
+<div class="face" style="background: linear-gradient(145deg, #8467FF, #4A2CCB); transform: rotateY(-90deg) translateZ(100px);">
+<svg width="76" height="76" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-8-4.7-8-10.2A4.3 4.3 0 0 1 12 7.5a4.3 4.3 0 0 1 8 2.3C20 15.3 12 20 12 20z"/></svg>
+</div>
+<div class="face" style="background: linear-gradient(145deg, #E4FA8E, #B5DD1E); transform: rotateX(90deg) translateZ(100px);">
+<svg width="76" height="76" viewBox="0 0 24 24" fill="none" stroke="#14102B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M4 7.5l8 4.5 8-4.5M12 12v9"/></svg>
+</div>
+<div class="face" style="background: linear-gradient(145deg, #3A2A9E, #1E1458); transform: rotateX(-90deg) translateZ(100px);">
+<svg width="76" height="76" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20v-7M12 20V5M19 20v-10M3 20.5h18"/></svg>
+</div>
+</div>
+
+<!-- floating cards -->
+<div class="fl1" style="position: absolute; left: 0; top: 40px;">
+<div style="display: flex; align-items: center; gap: 12px; padding: 14px 18px; border-radius: 20px; background: rgba(28,22,66,.85); border: 1px solid rgba(255,255,255,.18); box-shadow: 0 20px 50px rgba(0,0,0,.45);">
+<span style="width: 40px; height: 40px; border-radius: 12px; background: #C6F432; display: flex; align-items: center; justify-content: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#14102B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+<span><span style="display: block; font-weight: 700; font-size: 16px; color: #FFFFFF;">New order</span><span style="display: block; font-size: 14px; color: #CFC8EE;">Payment received</span></span>
+</div>
+</div>
+
+<div class="fl2" style="position: absolute; right: 0; top: 190px;">
+<div style="display: flex; align-items: center; gap: 12px; padding: 14px 18px; border-radius: 20px; background: rgba(28,22,66,.85); border: 1px solid rgba(255,255,255,.18); box-shadow: 0 20px 50px rgba(0,0,0,.45);">
+<svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><rect x="4" y="22" width="8" height="14" rx="3" fill="#A892FF"/><rect x="16" y="14" width="8" height="22" rx="3" fill="#FF7A59"/><rect x="28" y="4" width="8" height="32" rx="3" fill="#C6F432"/></svg>
+<span><span style="display: block; font-weight: 700; font-size: 16px; color: #FFFFFF;">Sales trending up</span><span style="display: block; font-size: 14px; color: #CFC8EE;">This week</span></span>
+</div>
+</div>
+
+<div class="fl3" style="position: absolute; left: 4%; bottom: 36px;">
+<div style="display: flex; align-items: center; gap: 12px; padding: 14px 18px; border-radius: 20px; background: rgba(28,22,66,.85); border: 1px solid rgba(255,255,255,.18); box-shadow: 0 20px 50px rgba(0,0,0,.45);">
+<span style="width: 40px; height: 40px; border-radius: 12px; background: #FF7A59; display: flex; align-items: center; justify-content: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#14102B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 6h11v10H2zM13 9h4.5l3 3.5V16H13z"/><circle cx="6.5" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg></span>
+<span><span style="display: block; font-weight: 700; font-size: 16px; color: #FFFFFF;">Out for delivery</span><span style="display: block; font-size: 14px; color: #CFC8EE;">On its way</span></span>
+</div>
+</div>
+
+<!-- spheres -->
+<div class="fl4" aria-hidden="true" style="position: absolute; right: 10%; top: 6px; width: 64px; height: 64px; border-radius: 50%; background: radial-gradient(circle at 30% 28%, #FFE0D6, #FF7A59 45%, #A83212); box-shadow: 0 16px 30px rgba(0,0,0,.4);"></div>
+<div class="fl1" aria-hidden="true" style="position: absolute; right: 4%; bottom: 70px; width: 44px; height: 44px; border-radius: 50%; background: radial-gradient(circle at 30% 28%, #F4FFC0, #C6F432 50%, #6E8E00); box-shadow: 0 12px 24px rgba(0,0,0,.4);"></div>
+<div class="fl2" aria-hidden="true" style="position: absolute; left: 30%; top: 0; width: 28px; height: 28px; border-radius: 50%; background: radial-gradient(circle at 30% 28%, #E6DEFF, #8467FF 50%, #3A22A8); box-shadow: 0 10px 20px rgba(0,0,0,.4);"></div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- MARQUEE -->
+<section aria-label="Platforms and services" style="border-top: 1px solid rgba(255,255,255,.1); border-bottom: 1px solid rgba(255,255,255,.1); background: rgba(255,255,255,.03); overflow: hidden;">
+<div class="marquee" style="padding: 26px 0;">
+<div style="display: flex; align-items: center; gap: 40px; padding-right: 40px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 30px; letter-spacing: -0.02em; color: #E9E4FF; white-space: nowrap;">
+<span>Amazon</span><span style="color: #FF9900;">&#10022;</span><span>eBay</span><span style="color: #5B9DFF;">&#10022;</span><span>Shopify</span><span style="color: #95BF47;">&#10022;</span><span>Etsy</span><span style="color: #FF8A3D;">&#10022;</span><span>Buzzing</span><span style="color: #A892FF;">&#10022;</span><span>Product hunting</span><span style="color: #C6F432;">&#10022;</span><span>Account management</span><span style="color: #FF7A59;">&#10022;</span><span>Store setup</span><span style="color: #A892FF;">&#10022;</span>
+</div>
+<div aria-hidden="true" style="display: flex; align-items: center; gap: 40px; padding-right: 40px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 30px; letter-spacing: -0.02em; color: #E9E4FF; white-space: nowrap;">
+<span>Amazon</span><span style="color: #FF9900;">&#10022;</span><span>eBay</span><span style="color: #5B9DFF;">&#10022;</span><span>Shopify</span><span style="color: #95BF47;">&#10022;</span><span>Etsy</span><span style="color: #FF8A3D;">&#10022;</span><span>Buzzing</span><span style="color: #A892FF;">&#10022;</span><span>Product hunting</span><span style="color: #C6F432;">&#10022;</span><span>Account management</span><span style="color: #FF7A59;">&#10022;</span><span>Store setup</span><span style="color: #A892FF;">&#10022;</span>
+</div>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" style="max-width: 1200px; margin: 0 auto; padding: 120px 24px 40px; box-sizing: border-box;">
+<div style="max-width: 720px;">
+<div style="font-size: 15px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #C6F432;">Our services</div>
+<h2 style="margin: 16px 0 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(36px, 4.6vw, 58px); line-height: 1.06; letter-spacing: -0.03em;">Pick your platform. We handle the rest.</h2>
+<p style="margin: 20px 0 0; font-size: 19px; line-height: 1.6; color: #C9C2EA;">Dedicated services for the marketplaces and store builders where your customers already shop.</p>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 24px; margin-top: 56px;">
+
+<!-- Amazon -->
+<article class="card" style="flex: 1 1 340px; min-width: 0; box-sizing: border-box; padding: 32px; border-radius: 28px; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.12); border-top: 4px solid #FF9900;">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 16px;">
+<div>
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 34px; font-weight: 800; letter-spacing: -0.02em; color: #FF9900;">Amazon</h3>
+<div style="margin-top: 4px; font-size: 14px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #C0B9E3;">Amazon services</div>
+</div>
+<svg class="ico" width="72" height="72" viewBox="0 0 80 80" aria-hidden="true"><polygon points="40,6 70,22 40,38 10,22" fill="#FFD9A0"/><polygon points="10,22 40,38 40,72 10,56" fill="#FF9900"/><polygon points="70,22 40,38 40,72 70,56" fill="#B86E00"/><line x1="25" y1="14" x2="55" y2="30" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" opacity=".8"/></svg>
+</div>
+<ul style="list-style: none; margin: 28px 0 0; padding: 0; display: flex; flex-direction: column; gap: 14px; font-size: 18px; color: #F4F1FF;">
+<li style="display: flex; align-items: center; gap: 12px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF9900" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke-opacity=".45"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>VA services</li>
+<li style="display: flex; align-items: center; gap: 12px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF9900" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke-opacity=".45"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>Product hunting</li>
+<li style="display: flex; align-items: center; gap: 12px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF9900" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke-opacity=".45"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>Product listing</li>
+<li style="display: flex; align-items: center; gap: 12px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF9900" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke-opacity=".45"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>Brand approvals</li>
+</ul>
+</article>
+
+<!-- eBay -->
+<article class="card" style="flex: 1 1 340px; min-width: 0; box-sizing: border-box; padding: 32px; border-radius: 28px; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.12); border-top: 4px solid #5B9DFF;">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 16px;">
+<div>
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 34px; font-weight: 800; letter-spacing: -0.02em; color: #7DB2FF;">eBay</h3>
+<div style="margin-top: 4px; font-size: 14px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #C0B9E3;">eBay services</div>
+</div>
+<svg class="ico" width="72" height="72" viewBox="0 0 80 80" aria-hidden="true"><defs><radialGradient id="sg3" cx="32%" cy="28%" r="75%"><stop offset="0" stop-color="#D6E6FF"/><stop offset=".45" stop-color="#5B9DFF"/><stop offset="1" stop-color="#1B4FB0"/></radialGradient></defs><circle cx="40" cy="42" r="30" fill="url(#sg3)"/></svg>
+</div>
+<ul style="list-style: none; margin: 28px 0 0; padding: 0; display: flex; flex-direction: column; gap: 14px; font-size: 18px; color: #F4F1FF;">
+<li style="display: flex; align-items: center; gap: 12px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7DB2FF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke-opacity=".45"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>Product hunting</li>
+<li style="display: flex; align-items: center; gap: 12px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7DB2FF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke-opacity=".45"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>Product listing</li>
+<li style="display: flex; align-items: center; gap: 12px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7DB2FF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke-opacity=".45"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>Account management</li>
+</ul>
+</article>
+
+<!-- Shopify -->
+<article class="card" style="flex: 1 1 340px; min-width: 0; box-sizing: border-box; padding: 32px; border-radius: 28px; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.12); border-top: 4px solid #95BF47;">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 16px;">
+<div>
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 34px; font-weight: 800; letter-spacing: -0.02em; color: #AFD96A;">Shopify</h3>
+<div style="margin-top: 4px; font-size: 14px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #C0B9E3;">Shopify services</div>
+</div>
+<svg class="ico" width="72" height="72" viewBox="0 0 80 80" aria-hidden="true"><polygon points="20,41 29,46 20,51 11,46" fill="#E6F6C4"/><polygon points="11,46 20,51 20,69 11,64" fill="#95BF47"/><polygon points="29,46 20,51 20,69 29,64" fill="#5E8A1E"/><polygon points="40,25 49,30 40,35 31,30" fill="#E6F6C4"/><polygon points="31,30 40,35 40,69 31,64" fill="#95BF47"/><polygon points="49,30 40,35 40,69 49,64" fill="#5E8A1E"/><polygon points="60,9 69,14 60,19 51,14" fill="#F1FFB0"/><polygon points="51,14 60,19 60,69 51,64" fill="#C6F432"/><polygon points="69,14 60,19 60,69 69,64" fill="#8DB30F"/></svg>
+</div>
+<ul style="list-style: none; margin: 28px 0 0; padding: 0; display: flex; flex-direction: column; gap: 14px; font-size: 18px; color: #F4F1FF;">
+<li style="display: flex; align-items: center; gap: 12px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#AFD96A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke-opacity=".45"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>Store setup</li>
+<li style="display: flex; align-items: center; gap: 12px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#AFD96A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke-opacity=".45"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>Product listing</li>
+<li style="display: flex; align-items: center; gap: 12px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#AFD96A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke-opacity=".45"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>Store management</li>
+<li style="display: flex; align-items: center; gap: 12px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#AFD96A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke-opacity=".45"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>Growth support</li>
+</ul>
+</article>
+
+<!-- Etsy -->
+<article class="card" style="flex: 1 1 340px; min-width: 0; box-sizing: border-box; padding: 32px; border-radius: 28px; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.12); border-top: 4px solid #F56400;">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 16px;">
+<div>
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 34px; font-weight: 800; letter-spacing: -0.02em; color: #FF8A3D;">Etsy</h3>
+<div style="margin-top: 4px; font-size: 14px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #C0B9E3;">Etsy services</div>
+</div>
+<svg class="ico" width="72" height="72" viewBox="0 0 80 80" aria-hidden="true"><path d="M16 56v8a24 10 0 0 0 48 0v-8z" fill="#A83F00"/><ellipse cx="40" cy="56" rx="24" ry="10" fill="#F56400"/><path d="M16 42v8a24 10 0 0 0 48 0v-8z" fill="#A83F00"/><ellipse cx="40" cy="42" rx="24" ry="10" fill="#FF8A3D"/><path d="M16 28v8a24 10 0 0 0 48 0v-8z" fill="#A83F00"/><ellipse cx="40" cy="28" rx="24" ry="10" fill="#FFB27D"/><ellipse cx="40" cy="28" rx="13" ry="5" fill="none" stroke="#F56400" stroke-width="2"/></svg>
+</div>
+<ul style="list-style: none; margin: 28px 0 0; padding: 0; display: flex; flex-direction: column; gap: 14px; font-size: 18px; color: #F4F1FF;">
+<li style="display: flex; align-items: center; gap: 12px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF8A3D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke-opacity=".45"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>Product hunting</li>
+<li style="display: flex; align-items: center; gap: 12px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF8A3D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke-opacity=".45"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>Product listing</li>
+<li style="display: flex; align-items: center; gap: 12px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF8A3D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke-opacity=".45"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>Account management</li>
+</ul>
+</article>
+
+<!-- Buzzing -->
+<article class="card" style="flex: 1 1 340px; min-width: 0; box-sizing: border-box; padding: 32px; border-radius: 28px; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.12); border-top: 4px solid #8467FF;">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 16px;">
+<div>
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 34px; font-weight: 800; letter-spacing: -0.02em; color: #B7A5FF;">Buzzing</h3>
+<div style="margin-top: 4px; font-size: 14px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #C0B9E3;">Buzzing services</div>
+</div>
+<svg class="ico" width="72" height="72" viewBox="0 0 80 80" aria-hidden="true"><polygon points="40,6 70,22 40,38 10,22" fill="#CBBBFF"/><polygon points="10,22 40,38 40,72 10,56" fill="#7C5CFF"/><polygon points="70,22 40,38 40,72 70,56" fill="#4C2FD0"/></svg>
+</div>
+<ul style="list-style: none; margin: 28px 0 0; padding: 0; display: flex; flex-direction: column; gap: 14px; font-size: 18px; color: #F4F1FF;">
+<li style="display: flex; align-items: center; gap: 12px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B7A5FF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke-opacity=".45"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>Product hunting</li>
+<li style="display: flex; align-items: center; gap: 12px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B7A5FF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke-opacity=".45"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>Product listing</li>
+<li style="display: flex; align-items: center; gap: 12px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B7A5FF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke-opacity=".45"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>Account management</li>
+</ul>
+</article>
+
+<!-- Talk to us -->
+<article style="flex: 1 1 340px; min-width: 0; box-sizing: border-box; padding: 32px; border-radius: 28px; background: linear-gradient(145deg, #6B47F5, #34209F); border: 1px solid rgba(255,255,255,.25); display: flex; flex-direction: column; justify-content: space-between; gap: 28px;">
+<div>
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 32px; font-weight: 800; letter-spacing: -0.02em; color: #FFFFFF;">Not sure where to start?</h3>
+<p style="margin: 14px 0 0; font-size: 18px; line-height: 1.6; color: #E8E1FF;">Tell us about your goals and we will point you to the right platform and plan.</p>
+</div>
+<div><a class="btn1" href="#contact">Talk to Ali</a></div>
+</article>
+
+</div>
+</section>
+
+<!-- 3D STACK -->
+<section id="stack" style="max-width: 1200px; margin: 0 auto; padding: 120px 24px; box-sizing: border-box;">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 48px 64px;">
+
+<div style="flex: 1 1 440px; min-width: 0;">
+<div style="font-size: 15px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #FF7A59;">Our approach</div>
+<h2 style="margin: 16px 0 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(36px, 4.6vw, 58px); line-height: 1.06; letter-spacing: -0.03em;">A growth stack built in layers.</h2>
+<p style="margin: 20px 0 0; font-size: 19px; line-height: 1.6; color: #C9C2EA;">Your success is our priority. Every layer is designed to carry the one above it, so your store stays dependable as it grows.</p>
+<div style="display: flex; flex-direction: column; gap: 22px; margin-top: 40px;">
+<div style="display: flex; gap: 18px; align-items: flex-start;">
+<span style="flex: none; width: 44px; height: 44px; border-radius: 14px; background: #7C5CFF; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 18px; color: #FFFFFF;">1</span>
+<div><div style="font-weight: 700; font-size: 20px;">Storefront</div><div style="margin-top: 4px; font-size: 17px; line-height: 1.55; color: #C0B9E3;">Store setup and product listings that are clear, quick and made to convert.</div></div>
+</div>
+<div style="display: flex; gap: 18px; align-items: flex-start;">
+<span style="flex: none; width: 44px; height: 44px; border-radius: 14px; background: #FF7A59; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 18px; color: #14102B;">2</span>
+<div><div style="font-weight: 700; font-size: 20px;">Checkout</div><div style="margin-top: 4px; font-size: 17px; line-height: 1.55; color: #C0B9E3;">Product hunting and account management that keep sales moving.</div></div>
+</div>
+<div style="display: flex; gap: 18px; align-items: flex-start;">
+<span style="flex: none; width: 44px; height: 44px; border-radius: 14px; background: #2E1F86; border: 1px solid rgba(255,255,255,.3); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 18px; color: #FFFFFF;">3</span>
+<div><div style="font-weight: 700; font-size: 20px;">Fulfilment</div><div style="margin-top: 4px; font-size: 17px; line-height: 1.55; color: #C0B9E3;">On-time delivery and reliable support behind every order.</div></div>
+</div>
+</div>
+</div>
+
+<div style="flex: 1 1 420px; min-width: 0; display: flex; justify-content: center;">
+<div role="img" aria-label="Illustration of three stacked layers labelled Storefront, Checkout and Fulfilment floating apart and together" style="position: relative; width: min(520px, 100%); height: 560px; perspective: 1500px;">
+<div aria-hidden="true" style="position: absolute; left: 50%; top: 50%; width: 460px; height: 460px; margin: -230px 0 0 -230px; border-radius: 50%; background: radial-gradient(circle, rgba(124,92,255,.35), rgba(124,92,255,0) 65%);"></div>
+<div class="iso" aria-hidden="true" style="position: absolute; left: 50%; top: 50%; width: 270px; height: 270px; margin: -135px 0 0 -135px;">
+<div class="layer l1">
+<div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px; color: #FFFFFF;">Fulfilment</div>
+<div style="display: flex; gap: 10px; margin-top: 18px;"><span style="width: 44px; height: 44px; border-radius: 12px; background: rgba(255,255,255,.16);"></span><span style="width: 44px; height: 44px; border-radius: 12px; background: rgba(255,255,255,.16);"></span><span style="width: 44px; height: 44px; border-radius: 12px; background: rgba(255,255,255,.16);"></span></div>
+</div>
+<div class="layer l2">
+<div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px; color: #14102B;">Checkout</div>
+<div style="margin-top: 18px; height: 14px; width: 80%; border-radius: 8px; background: rgba(20,16,43,.28);"></div>
+<div style="margin-top: 10px; height: 14px; width: 55%; border-radius: 8px; background: rgba(20,16,43,.28);"></div>
+<div style="margin-top: 18px; height: 40px; width: 62%; border-radius: 999px; background: #14102B;"></div>
+</div>
+<div class="layer l3">
+<div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px; color: #FFFFFF;">Storefront</div>
+<div style="display: flex; gap: 12px; margin-top: 16px;"><span style="flex: 1; height: 84px; border-radius: 14px; background: rgba(255,255,255,.26);"></span><span style="flex: 1; height: 84px; border-radius: 14px; background: rgba(255,255,255,.26);"></span></div>
+<div style="margin-top: 14px; height: 12px; width: 70%; border-radius: 8px; background: rgba(255,255,255,.4);"></div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" style="max-width: 1200px; margin: 0 auto; padding: 40px 24px 120px; box-sizing: border-box;">
+<div style="max-width: 720px;">
+<div style="font-size: 15px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #A892FF;">Process</div>
+<h2 style="margin: 16px 0 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(36px, 4.6vw, 58px); line-height: 1.06; letter-spacing: -0.03em;">From first call to first order.</h2>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 24px; margin-top: 56px;">
+<div class="card" style="flex: 1 1 250px; min-width: 0; box-sizing: border-box; padding: 30px; border-radius: 28px; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.12);">
+<div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 64px; line-height: 1; letter-spacing: -0.04em; color: #A892FF;">01</div>
+<h3 style="margin: 20px 0 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 24px; font-weight: 800;">Discover</h3>
+<p style="margin: 10px 0 0; font-size: 17px; line-height: 1.6; color: #C0B9E3;">We learn your products, customers and goals.</p>
+</div>
+<div class="card" style="flex: 1 1 250px; min-width: 0; box-sizing: border-box; padding: 30px; border-radius: 28px; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.12);">
+<div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 64px; line-height: 1; letter-spacing: -0.04em; color: #FF7A59;">02</div>
+<h3 style="margin: 20px 0 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 24px; font-weight: 800;">Plan</h3>
+<p style="margin: 10px 0 0; font-size: 17px; line-height: 1.6; color: #C0B9E3;">We choose the right platform, products and approach.</p>
+</div>
+<div class="card" style="flex: 1 1 250px; min-width: 0; box-sizing: border-box; padding: 30px; border-radius: 28px; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.12);">
+<div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 64px; line-height: 1; letter-spacing: -0.04em; color: #C6F432;">03</div>
+<h3 style="margin: 20px 0 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 24px; font-weight: 800;">Launch</h3>
+<p style="margin: 10px 0 0; font-size: 17px; line-height: 1.6; color: #C0B9E3;">We set up, list and open your store on time.</p>
+</div>
+<div class="card" style="flex: 1 1 250px; min-width: 0; box-sizing: border-box; padding: 30px; border-radius: 28px; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.12);">
+<div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 64px; line-height: 1; letter-spacing: -0.04em; color: #FFFFFF;">04</div>
+<h3 style="margin: 20px 0 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 24px; font-weight: 800;">Grow</h3>
+<p style="margin: 10px 0 0; font-size: 17px; line-height: 1.6; color: #C0B9E3;">We manage, support and scale what works.</p>
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section id="contact" style="max-width: 1200px; margin: 0 auto; padding: 0 24px 120px; box-sizing: border-box;">
+<div class="ctapanel" style="position: relative; overflow: hidden; border-radius: 44px; padding: 88px 56px; background: linear-gradient(135deg, #6B47F5, #34209F); border: 1px solid rgba(255,255,255,.25);">
+<div style="position: relative; max-width: 640px;">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(38px, 5vw, 64px); line-height: 1.05; letter-spacing: -0.03em; color: #FFFFFF;">Let's build your online success together.</h2>
+<p style="margin: 22px 0 0; font-size: 20px; line-height: 1.6; color: #E8E1FF;">Call or message Ali Raza and we will map out the fastest route to your first sale.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 40px;">
+<a class="btn1" href="tel:+923464433243">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#14102B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+Call +92 346 4433243</a>
+<a class="btn2" href="https://wa.me/923464433243">Message on WhatsApp</a>
+</div>
+<div style="display: flex; align-items: center; gap: 16px; margin-top: 44px;">
+<span style="flex: none; width: 56px; height: 56px; border-radius: 50%; background: radial-gradient(circle at 30% 28%, #E6DEFF, #8467FF 50%, #3A22A8); display: flex; align-items: center; justify-content: center; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 20px; color: #FFFFFF; box-shadow: 0 10px 24px rgba(0,0,0,.35);">AR</span>
+<div><div style="font-weight: 700; font-size: 18px; color: #FFFFFF;">Ali Raza</div><div style="margin-top: 2px; font-size: 16px; color: #E8E1FF;">E-commerce expert &middot; Emirates Emporium LTD</div></div>
+</div>
+</div>
+
+<div class="deco" aria-hidden="true" style="position: absolute; right: 90px; top: 50%; width: 120px; height: 120px; margin-top: -60px; perspective: 800px;">
+<div class="mini" style="position: relative; width: 120px; height: 120px;">
+<div class="miniface" style="background: linear-gradient(145deg, #E4FA8E, #B5DD1E); transform: translateZ(60px);"></div>
+<div class="miniface" style="background: linear-gradient(145deg, #FF9A7E, #D94E2A); transform: rotateY(180deg) translateZ(60px);"></div>
+<div class="miniface" style="background: linear-gradient(145deg, #9B80FF, #5233D9); transform: rotateY(90deg) translateZ(60px);"></div>
+<div class="miniface" style="background: linear-gradient(145deg, #8467FF, #4A2CCB); transform: rotateY(-90deg) translateZ(60px);"></div>
+<div class="miniface" style="background: linear-gradient(145deg, #F4FFC0, #C6F432); transform: rotateX(90deg) translateZ(60px);"></div>
+<div class="miniface" style="background: linear-gradient(145deg, #3A2A9E, #1E1458); transform: rotateX(-90deg) translateZ(60px);"></div>
+</div>
+</div>
+<div class="fl1 deco" aria-hidden="true" style="position: absolute; right: 260px; top: 60px; width: 56px; height: 56px; border-radius: 50%; background: radial-gradient(circle at 30% 28%, #FFE0D6, #FF7A59 45%, #A83212); box-shadow: 0 14px 28px rgba(0,0,0,.35);"></div>
+<div class="fl2 deco" aria-hidden="true" style="position: absolute; right: 50px; bottom: 56px; width: 40px; height: 40px; border-radius: 50%; background: radial-gradient(circle at 30% 28%, #F4FFC0, #C6F432 50%, #6E8E00); box-shadow: 0 10px 22px rgba(0,0,0,.35);"></div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer style="border-top: 1px solid rgba(255,255,255,.1);">
+<div style="max-width: 1200px; margin: 0 auto; padding: 40px 24px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px 32px;">
+<div style="display: flex; align-items: center; gap: 10px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 20px;">
+<svg width="28" height="28" viewBox="0 0 80 80" aria-hidden="true"><polygon points="40,6 70,22 40,38 10,22" fill="#CBBBFF"/><polygon points="10,22 40,38 40,72 10,56" fill="#7C5CFF"/><polygon points="70,22 40,38 40,72 70,56" fill="#4C2FD0"/></svg>
+<span>Ecommerce with Ali Moon</span>
+</div>
+<nav aria-label="Footer" style="display: flex; flex-wrap: wrap; gap: 12px 28px;">
+<a class="nl" href="#services">Services</a>
+<a class="nl" href="#stack">Our approach</a>
+<a class="nl" href="#process">Process</a>
+<a class="nl" href="tel:+923464433243">+92 346 4433243</a>
+</nav>
+<div style="font-size: 15px; color: #B6AEDB;">&copy; 2026 Emirates Emporium LTD. All rights reserved.</div>
+</div>
+</footer>
+
+</div>
+
+</body>
+</html>
